@@ -1,0 +1,21 @@
+#
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#head,#para {
+  color: blue;
+  text-align: center;
+}
+
+#para {
+    font-family: verdana;
+  font-size: 20px;
+  
+}
+
+#bold {
+
+  color: red;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>QN5 - Positioning Demo</title>
+		<style>
+			/* p1: relative, p2: float (left), p3: absolute */
+			#p1 {
+				position: relative;
+				background: #e8f4ff;
+				padding: 10px;
+				margin: 10px 0;
+			}
+
+			#p2 {
+				float: left;
+				width: 40%;
+				background: #fff4e5;
+				padding: 10px;
+				margin: 10px 15px 10px 0;
+			}
+
+			#p3 {
+				position: absolute;
+				top: 200px;
+				right: 20px;
+				background: #f6ffe8;
+				padding: 10px;
+			}
+
+			/* Clearfix so following content flows correctly after floated p2 */
+			.clearfix::after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Positioning Example</h1>
+
+		<p id="p1">This is paragraph p1. It is positioned <strong>relative</strong>,
+			so you can offset it using top/left while it still takes up its normal space.</p>
+
+		<div class="clearfix">
+			<p id="p2">This is paragraph p2. It is floated to the left using
+				<em>float: left</em>. Following content will wrap around it.</p>
+		</div>
+
+		<p id="p3">This is paragraph p3. It is positioned <strong>absolute</strong>
+			— removed from normal flow and placed at a fixed position on the page.</p>
+
+		<p>Some additional body text to show normal flow behind the absolute element.</p>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+/* qn6.css - external stylesheet for qn6.html */
+
+/* Both paragraphs: display block and margins */
+#pl,
+#p2 {
+  display: block;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+
+/* dv1 styles */
+#dv1 {
+  padding-left: 30px;
+  padding-right: 25px;
+  background-color: blue;
+  color: red;
+  font-family: Verdana, Geneva, sans-serif;
+  display: none;
+}
